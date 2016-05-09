@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="fr.llb.sio.ajasio.cahierdetexte.authentification.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:id="@+id/rltveLayout"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:background="#fb303f9f">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nom d&apos;utilisateur :"
+            android:id="@+id/txt_login"
+            android:textStyle="bold"
+            android:textColor="#cecece"
+            android:layout_below="@+id/img_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mot de passe :"
+            android:id="@+id/txt_mdp"
+            android:layout_marginTop="61dp"
+            android:layout_below="@+id/txt_login"
+            android:layout_alignEnd="@+id/bt_connect"
+            android:textStyle="bold"
+            android:textColor="#cecece" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:id="@+id/bt_connect"
+            android:layout_below="@+id/password_entry"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/login_entry"
+            android:layout_below="@+id/txt_login"
+            android:layout_centerHorizontal="true"
+            android:autoText="false"
+            android:background="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/password_entry"
+            android:layout_below="@+id/txt_mdp"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/img_logo"
+            android:src="@drawable/logo_llb_trans_gris"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:background="#00ffffff" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
